@@ -1,0 +1,123 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,500;1,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", Georgia, 'Times New Roman', Times, serif;
+
+}
+.container{
+  display: flex;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow:hidden;
+
+}
+.container .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.container header{
+  font-size: 1.34rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+
+}
+.container p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 550px;
+  text-align: center;
+
+}
+.time-content{
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  
+}
+.time-content .time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time .number,
+.time .text{
+  color: #fff;
+font-weight: 500;
+}
+.time .number{
+  font-size: 40px;
+}
+.time .text{
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.email-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+
+}
+.email-content p{
+  font-size: 13px;
+}
+.input-box{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  max-width: 360px;
+  width: 100%;
+  margin-top: 20px;
+  column-gap: 20px;
+
+}
+.input-box input,
+.input-box button{
+  height: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.2);
+  font-weight: 400;
+}
+.input-box input{
+  width: 100%;
+  padding: 0 15px;
+  color: #fff;
+  
+}
+.input::placeholder{
+  color: #fff;
+}
+.input-box button{
+  cursor: pointer;
+  color: #fff;
+  white-space: nowrap;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+}
+.input-box button:hover{
+  color: rgb(1, 30, 30);
+  background-color: #fff;
+}
+
+/* media query */
+@media screen and (max-width:300px) {
+  .container header{
+    font-size: 50px;
+
+  }
+}
