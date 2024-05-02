@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body{
+  display:flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgba(102, 51, 153, 0.208);
+}
+.wrapper i{
+  height: 45px;
+  width: 45px;
+  top: 50%;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  background: #fff;
+  text-align: center;
+  line-height: 48px;
+  transform: translateY(-50%);
+}
+.wrapper i:first-child{
+  left: -23px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -23px;
+}
+.carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space:nowrap;
+  scroll-behavior: smooth;
+}
+.carousel .dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel .dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  width: calc(100% / 3);
+  margin-left: 14px;
+}
+
+.wrapper{
+  max-width: 1200px;
+  position: relative;
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+/* midea query */
+@media screen and (max-width: 900px){
+  .carousel img{
+    width: calc(100% / 2);
+  }
+  
+}
+@media screen and (max-width: 550px){
+  .carousel img{
+    width: 100%;
+  }
+  
+}
